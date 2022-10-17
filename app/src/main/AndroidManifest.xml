@@ -13,46 +13,49 @@
         android:theme="@style/Theme.Levels_prototype"
         tools:targetApi="31">
         <activity
-            android:name=".CharacterScreen"
-            android:screenOrientation="landscape"
-            android:configChanges="orientation|keyboardHidden"
+            android:name=".EndScreen"
             android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CharacterScreen"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".LevelScreen"
-            android:screenOrientation="landscape"
             android:configChanges="orientation|keyboardHidden"
-            android:exported="false">
+            android:exported="false"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".SettingsScreen"
-            android:screenOrientation="landscape"
             android:configChanges="orientation|keyboardHidden"
-            android:exported="false">
+            android:exported="false"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="landscape"
             android:configChanges="orientation|keyboardHidden"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
         </activity>
     </application>
 

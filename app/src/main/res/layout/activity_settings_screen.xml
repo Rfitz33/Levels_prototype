@@ -10,48 +10,36 @@
 
     <CheckBox
         android:id="@+id/soundCheck"
-        android:layout_width="140dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="144dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="96dp"
         android:background="#f09d51"
         android:backgroundTint="#f09d51"
         android:buttonTint="#313638"
         android:checked="true"
+        android:fontFamily="@font/press_start_2p"
         android:text="@string/sound"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/resumeBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
-        android:id="@+id/hardModeCheck"
-        android:layout_width="140dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="12dp"
-        android:background="#f09d51"
-        android:backgroundTint="#f09d51"
-        android:buttonTint="#313638"
-        android:text="@string/hard_mode"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/soundCheck" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/resumeBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
         android:backgroundTint="#313638"
+        android:fontFamily="@font/press_start_2p"
         android:text="@string/resume"
         android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hardModeCheck" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/restartBtn"
@@ -59,19 +47,23 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:backgroundTint="#313638"
+        android:fontFamily="@font/press_start_2p"
         android:onClick="NewGameStart"
         android:text="@string/restart"
         android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resumeBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/resumeBtn"
+        app:layout_constraintVertical_bias="0.057" />
 
     <Button
         android:id="@+id/quitBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#313638"
+        android:fontFamily="@font/press_start_2p"
         android:onClick="ReturnToMenu"
         android:text="@string/quit"
         android:textSize="16sp"
@@ -81,4 +73,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/restartBtn"
         app:layout_constraintVertical_bias="0.196" />
+
+    <ImageView
+        android:id="@+id/gemImgSetScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.751"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:srcCompat="@drawable/gem_red" />
+
+    <ImageView
+        android:id="@+id/characterWalk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        tools:srcCompat="@drawable/character0_down1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
