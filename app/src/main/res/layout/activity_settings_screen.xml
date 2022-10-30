@@ -8,8 +8,9 @@
     android:backgroundTint="#e0dfd5"
     tools:context=".SettingsScreen">
 
-    <CheckBox
-        android:id="@+id/soundCheck"
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/soundSwitch"
+        style="@style/Theme.Levels_prototype"
         android:layout_width="144dp"
         android:layout_height="50dp"
         android:layout_marginTop="96dp"
@@ -18,15 +19,22 @@
         android:buttonTint="#313638"
         android:checked="true"
         android:fontFamily="@font/press_start_2p"
-        android:text="@string/sound"
-        android:textSize="20sp"
+        android:foregroundTint="#FFFFFF"
+        android:selectAllOnFocus="true"
+        android:text="Sound"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
         android:textStyle="bold"
+        android:trackTint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/resumeBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintHorizontal_bias=".5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.194"
+        app:thumbTint="#302C2C" />
 
     <Button
         android:id="@+id/resumeBtn"
@@ -48,15 +56,14 @@
         android:layout_marginTop="12dp"
         android:backgroundTint="#313638"
         android:fontFamily="@font/press_start_2p"
-        android:onClick="NewGameStart"
         android:text="@string/restart"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resumeBtn"
-        app:layout_constraintVertical_bias="0.057" />
+        app:layout_constraintVertical_bias="0.033" />
 
     <Button
         android:id="@+id/quitBtn"
@@ -64,12 +71,11 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#313638"
         android:fontFamily="@font/press_start_2p"
-        android:onClick="ReturnToMenu"
         android:text="@string/quit"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/restartBtn"
         app:layout_constraintVertical_bias="0.196" />
@@ -80,11 +86,11 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.751"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498"
-        app:srcCompat="@drawable/gem_red" />
+        app:layout_constraintVertical_bias="0.5"
+        tools:srcCompat="@drawable/red_gem" />
 
     <ImageView
         android:id="@+id/characterWalk"
@@ -92,10 +98,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498"
+        app:layout_constraintVertical_bias="0.5"
         tools:srcCompat="@drawable/character0_down1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

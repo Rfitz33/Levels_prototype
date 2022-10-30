@@ -4,25 +4,50 @@
     <item android:drawable="@drawable/character0_down1" android:duration="200" />
     <item android:drawable="@drawable/character0_down2" android:duration="200" />
     <item android:drawable="@drawable/character0_down3" android:duration="200" />
-    <item android:drawable="@drawable/character0_down1" android:duration="200" />
-    <item android:drawable="@drawable/character0_down2" android:duration="200" />
-    <item android:drawable="@drawable/character0_down3" android:duration="200" />
-    <item android:drawable="@drawable/character0_left1" android:duration="200" />
-    <item android:drawable="@drawable/character0_left2" android:duration="200" />
-    <item android:drawable="@drawable/character0_left3" android:duration="200" />
     <item android:drawable="@drawable/character0_left1" android:duration="200" />
     <item android:drawable="@drawable/character0_left2" android:duration="200" />
     <item android:drawable="@drawable/character0_left3" android:duration="200" />
     <item android:drawable="@drawable/character0_right1" android:duration="200" />
     <item android:drawable="@drawable/character0_right2" android:duration="200" />
     <item android:drawable="@drawable/character0_right3" android:duration="200" />
-    <item android:drawable="@drawable/character0_right1" android:duration="200" />
-    <item android:drawable="@drawable/character0_right2" android:duration="200" />
-    <item android:drawable="@drawable/character0_right3" android:duration="200" />
     <item android:drawable="@drawable/character0_up1" android:duration="200" />
     <item android:drawable="@drawable/character0_up2" android:duration="200" />
     <item android:drawable="@drawable/character0_up3" android:duration="200" />
-    <item android:drawable="@drawable/character0_up1" android:duration="200" />
-    <item android:drawable="@drawable/character0_up2" android:duration="200" />
-    <item android:drawable="@drawable/character0_up3" android:duration="200" />
+    <item android:drawable="@drawable/character1_down1" android:duration="200" />
+    <item android:drawable="@drawable/character1_down2" android:duration="200" />
+    <item android:drawable="@drawable/character1_down3" android:duration="200" />
+    <item android:drawable="@drawable/character1_left1" android:duration="200" />
+    <item android:drawable="@drawable/character1_left2" android:duration="200" />
+    <item android:drawable="@drawable/character1_left3" android:duration="200" />
+    <item android:drawable="@drawable/character1_right1" android:duration="200" />
+    <item android:drawable="@drawable/character1_right2" android:duration="200" />
+    <item android:drawable="@drawable/character1_right3" android:duration="200" />
+    <item android:drawable="@drawable/character1_up1" android:duration="200" />
+    <item android:drawable="@drawable/character1_up2" android:duration="200" />
+    <item android:drawable="@drawable/character1_up3" android:duration="200" />
+    <item android:drawable="@drawable/character2_down1" android:duration="200" />
+    <item android:drawable="@drawable/character2_down2" android:duration="200" />
+    <item android:drawable="@drawable/character2_down3" android:duration="200" />
+    <item android:drawable="@drawable/character2_left1" android:duration="200" />
+    <item android:drawable="@drawable/character2_left2" android:duration="200" />
+    <item android:drawable="@drawable/character2_left3" android:duration="200" />
+    <item android:drawable="@drawable/character2_right1" android:duration="200" />
+    <item android:drawable="@drawable/character2_right2" android:duration="200" />
+    <item android:drawable="@drawable/character2_right3" android:duration="200" />
+    <item android:drawable="@drawable/character2_up1" android:duration="200" />
+    <item android:drawable="@drawable/character2_up2" android:duration="200" />
+    <item android:drawable="@drawable/character2_up3" android:duration="200" />
+    <item android:drawable="@drawable/character4_down1" android:duration="200" />
+    <item android:drawable="@drawable/character4_down2" android:duration="200" />
+    <item android:drawable="@drawable/character4_down3" android:duration="200" />
+    <item android:drawable="@drawable/character4_left1" android:duration="200" />
+    <item android:drawable="@drawable/character4_left2" android:duration="200" />
+    <item android:drawable="@drawable/character4_left3" android:duration="200" />
+    <item android:drawable="@drawable/character4_right1" android:duration="200" />
+    <item android:drawable="@drawable/character4_right2" android:duration="200" />
+    <item android:drawable="@drawable/character4_right3" android:duration="200" />
+    <item android:drawable="@drawable/character4_up1" android:duration="200" />
+    <item android:drawable="@drawable/character4_up2" android:duration="200" />
+    <item android:drawable="@drawable/character4_up3" android:duration="200" />
+
 </animation-list>

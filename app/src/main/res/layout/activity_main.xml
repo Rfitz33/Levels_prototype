@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:background="#E0DFD5"
     android:backgroundTint="#E0DFD5"
+    android:soundEffectsEnabled="true"
+    tools:soundEffectsEnabled="true"
     tools:context=".MainActivity">
 
     <ImageView
@@ -24,8 +26,8 @@
         android:id="@+id/highScoreTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/high_score"
         android:fontFamily="@font/press_start_2p"
+        android:text="@string/high_score"
         android:textColor="#313638"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -42,8 +44,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#313638"
+        android:clickable="true"
         android:fontFamily="@font/press_start_2p"
-        android:onClick="NewGameStart"
+        android:soundEffectsEnabled="true"
         android:text="@string/new_game"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/characterBtn"
@@ -56,8 +59,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#313638"
+        android:clickable="true"
         android:fontFamily="@font/press_start_2p"
-        android:onClick="CharacterScreen"
         android:text="@string/character"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/settingsBtn"
@@ -71,7 +74,6 @@
         android:layout_marginBottom="32dp"
         android:backgroundTint="#313638"
         android:fontFamily="@font/press_start_2p"
-        android:onClick="SettingsScreen"
         android:text="@string/settings"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -119,5 +121,29 @@
         app:layout_constraintVertical_bias="0.5"
         tools:ignore="DuplicateIds"
         tools:srcCompat="@drawable/red_torch1" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <Button
+        android:id="@+id/retry_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.801" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
